@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.open-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  outline: none;
+}
+
+.close-modal {
+  float: right;
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+  outline: none;
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  position: fixed;
+  width: 900px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 3px solid black;
+}
+
+.step {
+  padding: 0 30px;
+}
+
+.step-title {
+  margin: 50px 0;
+}
+
+.step-car-selection {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 20px;
+  padding-bottom: 100px;
+}
+
+.step-car-services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding-bottom: 100px;
+}
+
+.price-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.coupon-btn {
+  display: flex;
+  justify-content: flex-end;
+  color: #48cae4;
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.base {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+
+.discount {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.step-contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 0 100px 50px;
+}
+
+.step-contact-form input{
+  height: 20px;
+}
+
+.step-contact-form textarea{
+  height: 100px;
+  resize: vertical;
+}
+
+.step-title-confirm-service {
+  margin: 20px 0;
+}
+
+.step-confirm-service {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.step-info {
+  margin-bottom: 40px;
+}
+
+.car-summary h3, .services-summary h3, .contact-summary h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.car-summary button, .services-summary button, .contact-summary button {
+ margin-left: 20px;
+}
+
+.services-summary ul {
+  padding: 0;
+}
+
+.services-summary li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.services-summary li div:first-child {
+  display: inline-block;
+  width: 340px;
+}
+
+.services-summary li div:last-child {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+}
+
+.services-summary-discount {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.services-summary-total {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0;
+}
+.contact-summary {
+  grid-column: 1 / span 2;
+  border-top: 1px solid gray;
+  padding: 10px 0;
+}
+
+.contact-summary-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 15px;
+}
+
+.step-confirmation .step-title {
+  margin: 50px 0 20px;
+}
+
+.step-confirmation {
+  text-align: center;
+  padding: 0 200px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.start-button, .back, .next, .confirm-service-button, .confirmation-button {
+  padding: 5px 30px;
+  margin: 5px;
+  outline: none;
+	cursor: pointer;
+  font-weight:bold;
+  border: 2px solid #212529;
+	box-shadow: 3px 4px 0px 0px #212529;
+}
+
+.confirm-service-button {
+  padding: 5px 10px;
+}
+
+.start-button:hover, .back:hover, .next:hover, .confirm-service-button:hover, .confirmation-button:hover {
+	background-color:lightgray;
+}
+
+.next:disabled:hover {
+	background-color: white;
+}
+
+.start-button:active, .back:active, .next:active, .confirm-service-button:active, .confirmation-button:active {
+	position: relative;
+  top: 1px;
+}
